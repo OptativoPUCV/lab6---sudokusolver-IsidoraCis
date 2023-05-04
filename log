@@ -23,3 +23,23 @@ Thu 04 May 2023 04:36:17 PM UTC:
  tests:  2|4
 total_score: 15/70
 3cabe6a
+Thu 04 May 2023 05:28:13 PM UTC: 
+ sudoku.c | 45 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 45 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:57:9: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+   57 |       if(num !=0)
+      |         ^
+sudoku.c:66:9: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+   66 |       if(numColumna !=0)
+      |         ^
+sudoku.c:53:9: error: unused variable ‘columnas’ [-Werror=unused-variable]
+   53 |     int columnas[10]={0,0,0,0,0,0,0,0,0};
+      |         ^~~~~~~~
+sudoku.c:94:1: error: control reaches end of non-void function [-Werror=return-type]
+   94 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1307830
