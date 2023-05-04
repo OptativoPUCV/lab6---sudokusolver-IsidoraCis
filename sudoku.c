@@ -75,9 +75,9 @@ int is_valid(Node* n){
         }
       }  
     }
-    return 1;
   }
-
+  return 1;
+}
 
   /*
    int* VectorCero = calloc(10, sizeof(int));
