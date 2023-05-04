@@ -2,3 +2,18 @@ Thu 04 May 2023 04:24:42 PM UTC:
  tests:  0|5
 total_score: 0/70
 b173ece
+Thu 04 May 2023 04:35:58 PM UTC: 
+ sudoku.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:61:26: error: right-hand operand of comma expression has no effect [-Werror=unused-value]
+   61 |               for(num = 1, num<= 9 ; num++)
+      |                          ^
+sudoku.c:61:43: error: expected ‘;’ before ‘)’ token
+   61 |               for(num = 1, num<= 9 ; num++)
+      |                                           ^
+      |                                           ;
+cc1: all warnings being treated as errors
+Compilation failed
+2a560dd
