@@ -50,7 +50,7 @@ int is_valid(Node* n){
   for(i=0; i <9 ; i++){
     
     int filas[10] = {0,0,0,0,0,0,0,0,0};
-    int columnas[10]={0,0,0,0,0,0,0,0,0};
+    //int columnas[10]={0,0,0,0,0,0,0,0,0};
     
     for(j=0 ; j <9 ; j++){
       num = n->sudo[i][j];

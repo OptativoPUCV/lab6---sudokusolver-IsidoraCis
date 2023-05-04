@@ -43,3 +43,20 @@ sudoku.c:94:1: error: control reaches end of non-void function [-Werror=return-t
 cc1: all warnings being treated as errors
 Compilation failed
 1307830
+Thu 04 May 2023 05:28:59 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:57:9: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+   57 |       if(num !=0)
+      |         ^
+sudoku.c:66:9: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+   66 |       if(numColumna !=0)
+      |         ^
+sudoku.c:94:1: error: control reaches end of non-void function [-Werror=return-type]
+   94 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a1615fd
