@@ -108,3 +108,9 @@ sudoku.c:53:9: error: unused variable ‘columnas’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 6730e9c
+Fri 05 May 2023 11:26:37 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  5|3
+total_score: 35/70
+5fda1ee

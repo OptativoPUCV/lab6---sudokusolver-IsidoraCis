@@ -66,8 +66,8 @@ int is_valid(Node* n){
       }
       
       if(numColumna !=0){
-        if(filas[numColumna] == 0){
-          filas[numColumna] = 1;
+        if(columnas[numColumna] == 0){
+          columnas[numColumna] = 1;
         } 
         else
         {
