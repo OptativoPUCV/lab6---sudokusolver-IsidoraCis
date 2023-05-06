@@ -45,8 +45,8 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
-  int i,j,numColumna,num, numSubMa;
-  int k=0;
+  int i,j,numColumna,num;
+  //int k=0, numSubMa;
   for(i=0; i <9 ; i++){
     
     int filas[10] = {0,0,0,0,0,0,0,0,0};
