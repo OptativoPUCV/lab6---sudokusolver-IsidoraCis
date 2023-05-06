@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
 
   int i,j,numColumna,num;
-  //int k=0, numSubMa;
+  int numSubMa;
   for(i=0; i <9 ; i++){
     
     int filas[10] = {0,0,0,0,0,0,0,0,0};
@@ -75,9 +75,9 @@ int is_valid(Node* n){
         }
       }  
 
-      /*
-      int fila = 3*(k/3) + (i/3);
-      int colum = 3*(k%3) + (i%3);
+      
+      int fila = 3*(i/3) + (j/3);
+      int colum = 3*(i%3) + (j%3);
       numSubMa = n->sudo[fila][colum];
 
       if(numSubMa !=0){
@@ -91,9 +91,8 @@ int is_valid(Node* n){
         {
           return 0;
         }
-        k++;
       }
-      */
+      
     }
   }
   return 1;
