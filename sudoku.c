@@ -76,7 +76,6 @@ int is_valid(Node* n){
         }
       }  
 
-      
       int fila = 3*(i/3) + (j/3);
       int colum = 3*(i%3) + (j%3);
       numSubMa = n->sudo[fila][colum];
@@ -99,24 +98,6 @@ int is_valid(Node* n){
   return 1;
 }
 
-  /*
-   int* VectorCero = calloc(10, sizeof(int));
-  //Recorrer fila
-  for(int i=0 ; i <9 ; i++)
-    {
-      int num;
-      num = n->sudo[0][i];
-      if(VectorCero[num] == 0)
-      {
-        VectorCero[num]=1;
-      }
-      else if(VectorCero[num]==1) return 1;
-    }
-    return 1;
-    */
-
-
-
 List* get_adj_nodes(Node* n){
     List* list=createList();
     int i,j, num;
@@ -130,7 +111,9 @@ List* get_adj_nodes(Node* n){
                 {
                   Node *adyacente = copy(n);
                   adyacente->sudo[i][j] = num;
-                  push(list, adyacente);
+                  if (is_valid(adyacente) == 1){
+                    push(list, adyacente);
+                  }
                 }
               return list;
             }
