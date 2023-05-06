@@ -91,9 +91,9 @@ int is_valid(Node* n){
         {
           return 0;
         }
-        k++;*/
+        k++;
       }
-      
+      */
     }
   }
   return 1;
