@@ -77,7 +77,7 @@ int is_valid(Node* n){
 
       int fila = 3*(k/3) + (p/3);
       int colum = 3*(k%3) + (p%3);
-      numSubMa = n->sudo[fila, colum];
+      numSubMa = n->sudo[fila][colum];
 
       if(numSubMa !=0){
         if(filas[numSubMa] == 0){
