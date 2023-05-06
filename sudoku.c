@@ -145,8 +145,7 @@ Node* DFS(Node* initial, int* cont){
       pop(S);
 
       if(is_final(n) == 1) return n;
-      List* nodos = createList();
-      nodos = get_adj_nodes(n);
+      List* nodos = get_adj_nodes(n);
 
       while(nodos != NULL)
         {
