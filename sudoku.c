@@ -51,6 +51,7 @@ int is_valid(Node* n){
     
     int filas[10] = {0,0,0,0,0,0,0,0,0};
     int columnas[10]={0,0,0,0,0,0,0,0,0};
+    int matriz[10] = {0,0,0,0,0,0,0,0,0};
     
     for(j=0 ; j <9 ; j++){
       num = n->sudo[i][j];
@@ -81,11 +82,11 @@ int is_valid(Node* n){
       numSubMa = n->sudo[fila][colum];
 
       if(numSubMa !=0){
-        if(filas[numSubMa] == 0){
-          filas[numSubMa] = 1;
+        if(matriz[numSubMa] == 0){
+          matriz[numSubMa] = 1;
         } 
-        else if(columnas[numSubMa] == 0){
-          columnas[numSubMa] = 1;
+        else if(matriz[numSubMa] == 0){
+          matriz[numSubMa] = 1;
         } 
         else
         {
