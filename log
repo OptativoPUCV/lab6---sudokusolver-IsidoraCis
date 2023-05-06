@@ -149,3 +149,28 @@ Sat 06 May 2023 01:43:07 PM UTC:
  tests:  2|4
 total_score: 15/70
 31eb56a
+Sat 06 May 2023 01:43:29 PM UTC: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:49:7: error: unused variable ‘k’ [-Werror=unused-variable]
+   49 |   int k=0;
+      |       ^
+sudoku.c:48:27: error: unused variable ‘numSubMa’ [-Werror=unused-variable]
+   48 |   int i,j,numColumna,num, numSubMa;
+      |                           ^~~~~~~~
+sudoku.c: At top level:
+sudoku.c:99:3: error: expected identifier or ‘(’ before ‘return’
+   99 |   return 1;
+      |   ^~~~~~
+sudoku.c:100:1: error: expected identifier or ‘(’ before ‘}’ token
+  100 | }
+      | ^
+sudoku.c: In function ‘is_valid’:
+sudoku.c:98:3: error: control reaches end of non-void function [-Werror=return-type]
+   98 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+9505c95
