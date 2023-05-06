@@ -147,10 +147,11 @@ Node* DFS(Node* initial, int* cont){
       if(is_final(n) == 1) return n;
       List* nodos = get_adj_nodes(n);
 
-      while(nodos != NULL)
+      Node* nodo = first(nodos);
+      while(nodo != NULL)
         {
-          push(S,nodos);
-          next(nodos);
+          push(S,nodo);
+          nodo = next(nodos);
         }
     }
   
